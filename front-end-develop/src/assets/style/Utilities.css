@@ -1,0 +1,76 @@
+.d-flex {
+    display: flex;
+}
+
+.d-grid {
+    display: grid;
+}
+
+.w-80 {
+    width: 80%;
+}
+
+.t-align-initial {
+    text-align: initial;
+}
+
+.t-align-center {
+    text-align: center;
+}
+
+.t-align-justify {
+    text-align-last: end;
+}
+
+.f-left {
+    float: left;
+}
+
+.f-right {
+    float: right;
+}
+
+.m-auto {
+    margin: auto;
+}
+
+.m-auto-right-0 {
+    margin: auto 0 auto auto;
+}
+
+.m-auto-right-custom-1 {
+    margin: auto 15px auto 0;
+}
+
+.m-top-custom-1 {
+    margin-top: 15px;
+}
+
+.m-top-custom-2 {
+    margin-top: 30px;
+}
+
+.m-right-custom-1 {
+    margin-right: 15px;
+}
+
+.m-right-custom-2 {
+    margin-right: 30px;
+}
+
+.m-custom-right-custom {
+    margin: auto 25px auto 0;
+}
+
+.m-custom-left-custom {
+    margin: auto 0 auto 25px;
+}
+
+
+.p-custom-left {
+    padding-left: 15px;
+}
+
+.ant-card-body{
+    padding: 0;
+}

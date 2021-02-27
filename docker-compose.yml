@@ -1,0 +1,28 @@
+version: '3.3'
+services:
+    back:
+        build: ./api-develop
+        depends_on:
+            - mongodb
+        restart: always
+    front:
+        build: './front-end-develop'
+        stdin_open: true
+        restart: always
+    proxy:
+        build: ./proxy
+        env_file:
+            - ./proxy/.env
+        ports:
+            - '81:3000'
+        depends_on:
+            - back
+            - front
+        restart: always
+    mongodb:
+        image: mongo
+        ports:
+            - "27019:27017"
+        volumes:
+            - './mongo:/data/db/'
+        restart: always
